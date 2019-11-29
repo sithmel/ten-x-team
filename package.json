@@ -1,0 +1,25 @@
+{
+  "name": "ten-x-team",
+  "version": "0.0.0",
+  "private": true,
+  "description": "how to be a 10x team",
+  "main": "index.js",
+  "scripts": {
+    "start": "reveal-md --css custom.css README.md",
+    "build": "reveal-md --css custom.css README.md --static docs --static-dirs=imgs --assets-dir assets --title 'How to be a 10 x team'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sithmel/ten-x-team.git"
+  },
+  "keywords": [],
+  "author": "Maurizio Lupo <maurizio.lupo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sithmel/ten-x-team/issues"
+  },
+  "homepage": "https://github.com/sithmel/ten-x-team#readme",
+  "dependencies": {
+    "reveal-md": "^3.4.1"
+  }
+}
