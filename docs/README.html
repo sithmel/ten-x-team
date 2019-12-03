@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>How to be a 10 x team</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./assets/custom.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">## how to be a 10x team
+A reflection
+<!-- .slide: data-background="./imgs/closeup-photo-of-primate-1207875.jpg" -->
+
+Maurizio Lupo
+
+<aside class="notes"><p>I have made these mistakes, you don&#39;t have to</p>
+</aside></script></section><section  data-markdown><script type="text/template">How to measure if an engineering team is successful?</script></section><section  data-markdown><script type="text/template">A successful team delivers,
+and keeps delivering</script></section><section  data-markdown><script type="text/template">## Delivering
+<!-- .slide: data-background="./imgs/lucian-alexe-1MUBZt4zoJ0-unsplash.jpg" --></script></section><section  data-markdown><script type="text/template">Dealing with uncertainty
+* sort by certainty <!-- .element: class="fragment" data-fragment-index="1" -->
+* delay decisions <!-- .element: class="fragment" data-fragment-index="2" -->
+* UI/UX before backend <!-- .element: class="fragment" data-fragment-index="3" -->
+
+<aside class="notes"><p>accept that things are going to change</p>
+<p>What are the right priorities</p>
+<p>Reprioritise tasks in order of certainty.</p>
+<p>Delay all decisions that can be delayed</p>
+<p>Start with the frontend</p>
+</aside></script></section><section  data-markdown><script type="text/template">Short **development** iterations:
+
+1. refactor to introduce new feature <!-- .element: class="fragment" data-fragment-index="1" -->
+2. introduce feature + test <!-- .element: class="fragment" data-fragment-index="2" -->
+3. integrate <!-- .element: class="fragment" data-fragment-index="3" -->
+4. ship <!-- .element: class="fragment" data-fragment-index="4" -->
+5. goto 1 <!-- .element: class="fragment" data-fragment-index="5" -->
+
+<aside class="notes"><p>Development iterations are not the same as product iterations.</p>
+<p>I recommend super short iterations. (1 day)</p>
+<p>rules:</p>
+<p>every day you ship a working version of the software</p>
+<p>never build more features then expected but keep the system open to add new features</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="./imgs/ape-monkey-monkey-family-affchen-66865.jpg" -->
+> "If you want to go fast, go alone. If you want to go far, go together."
+
+African Proverb</script></section><section  data-markdown><script type="text/template">Collaborate:
+* resilience <!-- .element: class="fragment" data-fragment-index="1" -->
+* sharing and learning <!-- .element: class="fragment" data-fragment-index="2" -->
+* for sanity check <!-- .element: class="fragment" data-fragment-index="3" --></script></section><section  data-markdown><script type="text/template">How?
+* Pairing/Mobbing <!-- .element: class="fragment" data-fragment-index="1" -->
+* Show and tell <!-- .element: class="fragment" data-fragment-index="2" -->
+* Knowledge sharing <!-- .element: class="fragment" data-fragment-index="3" -->
+* Code reviews <!-- .element: class="fragment" data-fragment-index="4" -->
+
+<aside class="notes"><p>PRs with purpose (unsure, or needs validation, show and tell)</p>
+<ul>
+<li><p>push to master otherwise</p>
+</li>
+<li><p>PR ARE A BLUNT TOOL FOR ENSURING CORRECTNESS</p>
+</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">### Testing
+* never postpone <!-- .element: class="fragment" data-fragment-index="1" -->
+* the "acceptance test only" fallacy <!-- .element: class="fragment" data-fragment-index="2" -->
+* dumb tests are fine <!-- .element: class="fragment" data-fragment-index="3" -->
+
+<aside class="notes"><p>Never postpone testing: test is supposed to help you, should not be a chore.
+Automated tests should save your time. But the only do so if you don&#39;t postpone them.</p>
+<p>If testing is difficult consider changing the code or changing testing strategy/level.</p>
+<p>100% test coverage is often the wrong goal</p>
+<p>try to cover 1 obvious cases and the corner cases
+balance cost/convenience</p>
+<p>Balance for acceptance and unit test:
+&quot;I don&#39;t need to write unit test because I am experienced enough to write modular/testable code. Also testing the implementation may become an hindrance when refactoring.
+I only need to write acceptance test to ensure the correctness&quot;</p>
+</aside></script></section><section  data-markdown><script type="text/template">## keeps delivering
+<!-- .slide: data-background="./imgs/yellow-bananas-61127.jpg" -->
+
+<aside class="notes"><p>Let&#39;s focus on the second part</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="./imgs/building-with-tree-1534057.jpg" -->
+> "Legacy software is any software where people are afraid to make changes”
+
+Rajiv Prabhakar
+<aside class="notes"><p>If people are afraid, they are not refactoring and the code deteriorates.
+When this happen the development slows down considerably.</p>
+<p>How to maintain a project approachable and easy to understand ?</p>
+</aside></script></section><section  data-markdown><script type="text/template">Tech debt
+- only if necessary <!-- .element: class="fragment" data-fragment-index="1" -->
+- documented <!-- .element: class="fragment" data-fragment-index="2" -->
+- two types <!-- .element: class="fragment" data-fragment-index="3" -->
+<aside class="notes"><p>There are 2 types of tech debt. The first one can be addressed the first time you change the code (as soon as it is documented clearly). I suggest to move this in the project board, to be picked up when you do any change to the the project.</p>
+<p>The second type takes more effort and time and requires planning ahead. You have to deal with this and agree a strategy with the PM.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="./imgs/gorilla-animal-35992.jpg" -->
+
+> “Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live”
+
+John Woods
+
+<aside class="notes"><p>I am trying to stick to this principle, and for this reason I don&#39;t give anyone my address</p>
+</aside></script></section><section  data-markdown><script type="text/template">Document:
+- how (to run/to test/to use) <!-- .element: class="fragment" data-fragment-index="1" -->
+- why <!-- .element: class="fragment" data-fragment-index="2" -->
+- tradeoffs <!-- .element: class="fragment" data-fragment-index="3" -->
+- assumptions <!-- .element: class="fragment" data-fragment-index="4" -->
+- tech debt <!-- .element: class="fragment" data-fragment-index="5" -->
+
+<aside class="notes"><ul>
+<li>document your love for the next dev. document why, tradeoffs, assumptions, tech debt
+keep the documentation in the most obvious place and keep it up-to-date.</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">Microservice architecture principles:
+- self containment <!-- .element: class="fragment" data-fragment-index="1" -->
+- indipendence <!-- .element: class="fragment" data-fragment-index="2" -->
+
+<aside class="notes"><ul>
+<li>a service FE should talk with its BE</li>
+<li>do not spread things across services</li>
+<li>fake endpoint to external services when practical</li>
+<li>create demo page</li>
+<li>fake the data (for test and demo)</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">Don't be too clever
+- Keep it simple <!-- .element: class="fragment" data-fragment-index="1" -->
+- "everybody does it" is no good reason <!-- .element: class="fragment" data-fragment-index="2" -->
+- explicit is better than implicit <!-- .element: class="fragment" data-fragment-index="3" -->
+
+<aside class="notes"><ul>
+<li><p>Vanilla is better (keep things simple and do not use fancy libs, unless necessary or very convenient)</p>
+</li>
+<li><p>do things for a reason</p>
+</li>
+<li><p>use functional paradygm with moderation</p>
+</li>
+<li><p>use rest sensibly, graphql is probably not the solution you are looking for</p>
+</li>
+<li><p>redux-form</p>
+</li>
+<li><p>do not use nesting on sass. Except for namespacing</p>
+</li>
+<li><p>do not use fancy transpilation or macros</p>
+</li>
+</ul>
+<p>Use the minimal amount of things you need and do not over-engineer</p>
+</aside></script></section><section  data-markdown><script type="text/template">Make a service observable:
+- Monitoring, alerting <!-- .element: class="fragment" data-fragment-index="1" -->
+- Audit <!-- .element: class="fragment" data-fragment-index="2" -->
+- logs <!-- .element: class="fragment" data-fragment-index="3" -->
+
+<aside class="notes"><p>dedicate time and attention on monitoring, alerting, audit, debugging helpers</p>
+</aside></script></section><section  data-markdown><script type="text/template">## Solve a problem once
+<!-- .slide: data-background="./imgs/view-ape-thinking-primate-33535.jpg" -->
+</script></section><section  data-markdown><script type="text/template">## Be proud of what you achieve
+<!-- .slide: data-background="./imgs/brown-primate-hanging-on-tree-1123771.jpg" --></script></section><section  data-markdown><script type="text/template">## Thanks
+<!-- .slide: data-background="./imgs/black-chimpanzee-smiling-50582.jpg" -->
+Let's keep in touch!
+* @sithmel
+* maurizio.lupo@gmail.com
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
