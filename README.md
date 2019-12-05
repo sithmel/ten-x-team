@@ -16,8 +16,8 @@ and keeps delivering
 <!-- .slide: data-background="./imgs/lucian-alexe-1MUBZt4zoJ0-unsplash.jpg" -->
 ---
 Dealing with uncertainty
-* sort by certainty <!-- .element: class="fragment" data-fragment-index="1" -->
-* delay decisions <!-- .element: class="fragment" data-fragment-index="2" -->
+* start doing what you are sure of <!-- .element: class="fragment" data-fragment-index="1" -->
+* delaying decisions <!-- .element: class="fragment" data-fragment-index="2" -->
 * UI/UX before backend <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Note:
@@ -50,6 +50,7 @@ every day you ship a working version of the software
 
 never build more features then expected but keep the system open to add new features
 
+The process requires that, when thinking how to go from A to B. You have to consider the journey, not only the final result.
 ---
 <!-- .slide: data-background="./imgs/ape-monkey-monkey-family-affchen-66865.jpg" -->
 > "If you want to go fast, go alone. If you want to go far, go together."
@@ -64,8 +65,7 @@ Collaborate:
 How?
 * Pairing/Mobbing <!-- .element: class="fragment" data-fragment-index="1" -->
 * Show and tell <!-- .element: class="fragment" data-fragment-index="2" -->
-* Knowledge sharing <!-- .element: class="fragment" data-fragment-index="3" -->
-* Code reviews <!-- .element: class="fragment" data-fragment-index="4" -->
+* Code reviews <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Note:
 PRs with purpose (unsure, or needs validation, show and tell)
@@ -155,16 +155,16 @@ Don't be too clever
 - Keep it simple <!-- .element: class="fragment" data-fragment-index="1" -->
 - "everybody does it" is no good reason <!-- .element: class="fragment" data-fragment-index="2" -->
 - explicit is better than implicit <!-- .element: class="fragment" data-fragment-index="3" -->
+- you should not be driven by fear <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Note: 
 - Vanilla is better (keep things simple and do not use fancy libs, unless necessary or very convenient)
 - do things for a reason
 - use functional paradygm with moderation
-
 - use rest sensibly, graphql is probably not the solution you are looking for
-- redux-form
 - do not use nesting on sass. Except for namespacing
 - do not use fancy transpilation or macros
+- redux-form
 
 Use the minimal amount of things you need and do not over-engineer
 ---
@@ -172,13 +172,13 @@ Make a service observable:
 - Monitoring, alerting <!-- .element: class="fragment" data-fragment-index="1" -->
 - Audit <!-- .element: class="fragment" data-fragment-index="2" -->
 - logs <!-- .element: class="fragment" data-fragment-index="3" -->
+- business metrics  <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Note: 
 dedicate time and attention on monitoring, alerting, audit, debugging helpers
 ---
 ## Solve a problem once
 <!-- .slide: data-background="./imgs/view-ape-thinking-primate-33535.jpg" -->
-
 ---
 ## Be proud of what you achieve
 <!-- .slide: data-background="./imgs/brown-primate-hanging-on-tree-1123771.jpg" -->
