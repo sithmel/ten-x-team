@@ -17,7 +17,7 @@ and keeps delivering
 ---
 Dealing with uncertainty
 * start doing what you are sure of <!-- .element: class="fragment" data-fragment-index="1" -->
-* delaying decisions <!-- .element: class="fragment" data-fragment-index="2" -->
+* delaying decision point <!-- .element: class="fragment" data-fragment-index="2" -->
 * UI/UX before backend <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Note:
@@ -76,7 +76,7 @@ PRs with purpose (unsure, or needs validation, show and tell)
 ---
 ### Testing
 * never postpone <!-- .element: class="fragment" data-fragment-index="1" -->
-* the "acceptance test only" fallacy <!-- .element: class="fragment" data-fragment-index="2" -->
+* the "end-to-end tests" fallacy <!-- .element: class="fragment" data-fragment-index="2" -->
 * dumb tests are fine <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Note:
@@ -140,22 +140,16 @@ Note:
 - document your love for the next dev. document why, tradeoffs, assumptions, tech debt
 keep the documentation in the most obvious place and keep it up-to-date.
 ---
-Microservice architecture principles:
-- self containment <!-- .element: class="fragment" data-fragment-index="1" -->
-- indipendence <!-- .element: class="fragment" data-fragment-index="2" -->
+Break rules:
+- Pragmatism over principles <!-- .element: class="fragment" data-fragment-index="1" -->
+- Understand why rule was in place <!-- .element: class="fragment" data-fragment-index="2" -->
 
-Note:
-- a service FE should talk with its BE
-- do not spread things across services
-- fake endpoint to external services when practical
-- create demo page
-- fake the data (for test and demo)
 ---
 Don't be too clever
 - Keep it simple <!-- .element: class="fragment" data-fragment-index="1" -->
 - "everybody does it" is no good reason <!-- .element: class="fragment" data-fragment-index="2" -->
 - explicit is better than implicit <!-- .element: class="fragment" data-fragment-index="3" -->
-- you should not be driven by fear <!-- .element: class="fragment" data-fragment-index="4" -->
+- don not look too far ahead <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Note: 
 - Vanilla is better (keep things simple and do not use fancy libs, unless necessary or very convenient)
@@ -185,6 +179,5 @@ dedicate time and attention on monitoring, alerting, audit, debugging helpers
 ---
 ## Thanks
 <!-- .slide: data-background="./imgs/black-chimpanzee-smiling-50582.jpg" -->
-Let's keep in touch!
 * @sithmel
 * maurizio.lupo@gmail.com

@@ -24,8 +24,8 @@ Maurizio Lupo
 </aside></script></section><section  data-markdown><script type="text/template">How to measure if an engineering team is successful?</script></section><section  data-markdown><script type="text/template">A successful team delivers,
 and keeps delivering</script></section><section  data-markdown><script type="text/template">## Delivering
 <!-- .slide: data-background="./imgs/lucian-alexe-1MUBZt4zoJ0-unsplash.jpg" --></script></section><section  data-markdown><script type="text/template">Dealing with uncertainty
-* sort by certainty <!-- .element: class="fragment" data-fragment-index="1" -->
-* delay decisions <!-- .element: class="fragment" data-fragment-index="2" -->
+* start doing what you are sure of <!-- .element: class="fragment" data-fragment-index="1" -->
+* delaying decision point <!-- .element: class="fragment" data-fragment-index="2" -->
 * UI/UX before backend <!-- .element: class="fragment" data-fragment-index="3" -->
 
 <aside class="notes"><p>accept that things are going to change</p>
@@ -46,6 +46,7 @@ and keeps delivering</script></section><section  data-markdown><script type="tex
 <p>rules:</p>
 <p>every day you ship a working version of the software</p>
 <p>never build more features then expected but keep the system open to add new features</p>
+<p>The process requires that, when thinking how to go from A to B. You have to consider the journey, not only the final result.</p>
 </aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="./imgs/ape-monkey-monkey-family-affchen-66865.jpg" -->
 > "If you want to go fast, go alone. If you want to go far, go together."
 
@@ -55,8 +56,7 @@ African Proverb</script></section><section  data-markdown><script type="text/tem
 * for sanity check <!-- .element: class="fragment" data-fragment-index="3" --></script></section><section  data-markdown><script type="text/template">How?
 * Pairing/Mobbing <!-- .element: class="fragment" data-fragment-index="1" -->
 * Show and tell <!-- .element: class="fragment" data-fragment-index="2" -->
-* Knowledge sharing <!-- .element: class="fragment" data-fragment-index="3" -->
-* Code reviews <!-- .element: class="fragment" data-fragment-index="4" -->
+* Code reviews <!-- .element: class="fragment" data-fragment-index="3" -->
 
 <aside class="notes"><p>PRs with purpose (unsure, or needs validation, show and tell)</p>
 <ul>
@@ -67,7 +67,7 @@ African Proverb</script></section><section  data-markdown><script type="text/tem
 </ul>
 </aside></script></section><section  data-markdown><script type="text/template">### Testing
 * never postpone <!-- .element: class="fragment" data-fragment-index="1" -->
-* the "acceptance test only" fallacy <!-- .element: class="fragment" data-fragment-index="2" -->
+* the "end-to-end tests" fallacy <!-- .element: class="fragment" data-fragment-index="2" -->
 * dumb tests are fine <!-- .element: class="fragment" data-fragment-index="3" -->
 
 <aside class="notes"><p>Never postpone testing: test is supposed to help you, should not be a chore.
@@ -114,51 +114,36 @@ John Woods
 <li>document your love for the next dev. document why, tradeoffs, assumptions, tech debt
 keep the documentation in the most obvious place and keep it up-to-date.</li>
 </ul>
-</aside></script></section><section  data-markdown><script type="text/template">Microservice architecture principles:
-- self containment <!-- .element: class="fragment" data-fragment-index="1" -->
-- indipendence <!-- .element: class="fragment" data-fragment-index="2" -->
-
-<aside class="notes"><ul>
-<li>a service FE should talk with its BE</li>
-<li>do not spread things across services</li>
-<li>fake endpoint to external services when practical</li>
-<li>create demo page</li>
-<li>fake the data (for test and demo)</li>
-</ul>
-</aside></script></section><section  data-markdown><script type="text/template">Don't be too clever
+</aside></script></section><section  data-markdown><script type="text/template">Break rules:
+- Pragmatism over principles <!-- .element: class="fragment" data-fragment-index="1" -->
+- Understand why rule was in place <!-- .element: class="fragment" data-fragment-index="2" -->
+</script></section><section  data-markdown><script type="text/template">Don't be too clever
 - Keep it simple <!-- .element: class="fragment" data-fragment-index="1" -->
 - "everybody does it" is no good reason <!-- .element: class="fragment" data-fragment-index="2" -->
 - explicit is better than implicit <!-- .element: class="fragment" data-fragment-index="3" -->
+- don not look too far ahead <!-- .element: class="fragment" data-fragment-index="4" -->
 
 <aside class="notes"><ul>
-<li><p>Vanilla is better (keep things simple and do not use fancy libs, unless necessary or very convenient)</p>
-</li>
-<li><p>do things for a reason</p>
-</li>
-<li><p>use functional paradygm with moderation</p>
-</li>
-<li><p>use rest sensibly, graphql is probably not the solution you are looking for</p>
-</li>
-<li><p>redux-form</p>
-</li>
-<li><p>do not use nesting on sass. Except for namespacing</p>
-</li>
-<li><p>do not use fancy transpilation or macros</p>
-</li>
+<li>Vanilla is better (keep things simple and do not use fancy libs, unless necessary or very convenient)</li>
+<li>do things for a reason</li>
+<li>use functional paradygm with moderation</li>
+<li>use rest sensibly, graphql is probably not the solution you are looking for</li>
+<li>do not use nesting on sass. Except for namespacing</li>
+<li>do not use fancy transpilation or macros</li>
+<li>redux-form</li>
 </ul>
 <p>Use the minimal amount of things you need and do not over-engineer</p>
 </aside></script></section><section  data-markdown><script type="text/template">Make a service observable:
 - Monitoring, alerting <!-- .element: class="fragment" data-fragment-index="1" -->
 - Audit <!-- .element: class="fragment" data-fragment-index="2" -->
 - logs <!-- .element: class="fragment" data-fragment-index="3" -->
+- business metrics  <!-- .element: class="fragment" data-fragment-index="4" -->
 
 <aside class="notes"><p>dedicate time and attention on monitoring, alerting, audit, debugging helpers</p>
 </aside></script></section><section  data-markdown><script type="text/template">## Solve a problem once
-<!-- .slide: data-background="./imgs/view-ape-thinking-primate-33535.jpg" -->
-</script></section><section  data-markdown><script type="text/template">## Be proud of what you achieve
+<!-- .slide: data-background="./imgs/view-ape-thinking-primate-33535.jpg" --></script></section><section  data-markdown><script type="text/template">## Be proud of what you achieve
 <!-- .slide: data-background="./imgs/brown-primate-hanging-on-tree-1123771.jpg" --></script></section><section  data-markdown><script type="text/template">## Thanks
 <!-- .slide: data-background="./imgs/black-chimpanzee-smiling-50582.jpg" -->
-Let's keep in touch!
 * @sithmel
 * maurizio.lupo@gmail.com
 </script></section></div>
