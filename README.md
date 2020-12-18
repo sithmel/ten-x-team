@@ -18,7 +18,7 @@ and keeps delivering
 Dealing with uncertainty
 * start doing what you are sure of <!-- .element: class="fragment" data-fragment-index="1" -->
 * delaying decision point <!-- .element: class="fragment" data-fragment-index="2" -->
-* UI/UX before backend <!-- .element: class="fragment" data-fragment-index="3" -->
+* start with the user <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Note:
 accept that things are going to change
@@ -76,8 +76,9 @@ PRs with purpose (unsure, or needs validation, show and tell)
 ---
 ### Testing
 * never postpone <!-- .element: class="fragment" data-fragment-index="1" -->
-* the "end-to-end tests" fallacy <!-- .element: class="fragment" data-fragment-index="2" -->
+* the only "end-to-end tests" fallacy <!-- .element: class="fragment" data-fragment-index="2" -->
 * dumb tests are fine <!-- .element: class="fragment" data-fragment-index="3" -->
+* good code is easy to test <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Note:
 Never postpone testing: test is supposed to help you, should not be a chore.
@@ -134,7 +135,6 @@ Document:
 - why <!-- .element: class="fragment" data-fragment-index="2" -->
 - tradeoffs <!-- .element: class="fragment" data-fragment-index="3" -->
 - assumptions <!-- .element: class="fragment" data-fragment-index="4" -->
-- tech debt <!-- .element: class="fragment" data-fragment-index="5" -->
 
 Note:
 - document your love for the next dev. document why, tradeoffs, assumptions, tech debt
@@ -149,7 +149,7 @@ Don't be too clever
 - Keep it simple <!-- .element: class="fragment" data-fragment-index="1" -->
 - "everybody does it" is no good reason <!-- .element: class="fragment" data-fragment-index="2" -->
 - explicit is better than implicit <!-- .element: class="fragment" data-fragment-index="3" -->
-- don not look too far ahead <!-- .element: class="fragment" data-fragment-index="4" -->
+- do not look too far ahead <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Note: 
 - Vanilla is better (keep things simple and do not use fancy libs, unless necessary or very convenient)
