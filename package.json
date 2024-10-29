@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/sithmel/ten-x-team#readme",
   "dependencies": {
-    "reveal-md": "^3.4.1"
+    "reveal-md": "^6.1.3"
   }
 }
